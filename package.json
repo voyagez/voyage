@@ -1,0 +1,28 @@
+{
+  "name": "voyage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/voyagez/voyage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/voyagez/voyage/issues"
+  },
+  "homepage": "https://github.com/voyagez/voyage#readme",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongodb": "^5.8.1",
+    "mongoose": "^6.3.1",
+    "nodemon": "^2.0.16"
+  }
+}
