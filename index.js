@@ -4,8 +4,6 @@ import mongoose from "mongoose"
 const app = express()
 dotenv.config()
 
-const conflict = {}
-
 const connect = async () => {
     try {
         await mongoose.connect(process.env.MONGO);
