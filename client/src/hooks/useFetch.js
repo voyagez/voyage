@@ -10,7 +10,9 @@ const useFetch = (url) => {
     const fetchData = async () => {
       setLoading(true);
       try {
-        const res = await axios.get(url);
+        const res = await axios.get(url,
+          {headers: {"Content-Type": "application/json"}}
+        );
         setData(res.data);
       } catch (err) {
         setError(err);
