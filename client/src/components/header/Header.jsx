@@ -36,6 +36,9 @@ const Header = ({ type }) => {
 
   const navigate = useNavigate();
   const { user } = useContext(AuthContext);
+  const handleHotel = () => {
+    navigate('/hotels')
+  }
 
   const handleOption = (name, operation) => {
     setOptions((prev) => {
@@ -73,7 +76,7 @@ const Header = ({ type }) => {
             <div className="headerList">
               <div className="headerListItem active">
                 <FontAwesomeIcon icon={faBed} />
-                <span>Stays</span>
+                <span onClick={handleHotel}>Stays</span>
               </div>
               <div className="headerListItem">
                 <FontAwesomeIcon icon={faPlane} />

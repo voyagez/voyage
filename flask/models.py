@@ -46,5 +46,10 @@ class Room(db.Model, SerializerMixin):
     hotel_id = db.Column(db.Integer, db.ForeignKey('hotels.id'))
     hotel = db.relationship('Hotel',
         back_populates='rooms')
+    @validates('price')
+    def validate_price_not_negative(self, key, price):
+        if price < 0:
+            raise ValueError('Price cannot be negative')
+        return price
     def __repr__(self):
         return f'<Rooms {self.id}>'
