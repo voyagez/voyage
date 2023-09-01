@@ -93,6 +93,7 @@ if __name__ == "__main__":
                 max_people=2,
                 desc="Wow so nice",
                 room_numbers=202,
+                hotel_id=1
             ),
             Room(
                 title="The Shining",
@@ -100,6 +101,7 @@ if __name__ == "__main__":
                 max_people=1,
                 desc="A lovely lady stays here",
                 room_numbers=237,
+                hotel_id=1
             ),
             Room(
                 title="Johnson",
@@ -107,6 +109,7 @@ if __name__ == "__main__":
                 max_people=100,
                 desc="spacious",
                 room_numbers=10,
+                hotel_id=2
             ),
             Room(
                 title="Double suite",
@@ -114,6 +117,7 @@ if __name__ == "__main__":
                 max_people=2,
                 desc="romantic",
                 room_numbers=123,
+                hotel_id=1
             ),
             Room(
                 title="Cabana",
@@ -121,14 +125,23 @@ if __name__ == "__main__":
                 max_people=3,
                 desc="luxurious",
                 room_numbers=4,
+                hotel_id=2
             ),
-            Room(title="Suite", price=450, max_people=1, desc="good", room_numbers=10),
+            Room(
+                title="Suite",
+                price=450,
+                max_people=1,
+                desc="good",
+                room_numbers=10,
+                hotel_id=1
+            ),
             Room(
                 title="Another Suite",
                 price=300,
                 max_people=3,
                 desc="great",
                 room_numbers=9,
+                hotel_id=2
             ),
         ]
 
